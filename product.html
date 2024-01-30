@@ -75,7 +75,6 @@
         document.body.addEventListener("click", function (event) {
           event.preventDefault();
 
-          // Vì event của thẻ a, nên phải chạy window.open trước cho khỏi bị delay
           setTimeout(function () {
             document.querySelector(".modal-loading").remove();
           }, 1500);
@@ -85,7 +84,6 @@
         });
       }
 
-        // Chạy particles.js khi trang web được tải
         particlesJS('particles-js', {
             "particles": {
                 "number": {
